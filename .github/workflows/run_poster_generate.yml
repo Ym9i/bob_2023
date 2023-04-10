@@ -50,8 +50,8 @@ jobs:
 
       - name: Push new postger
         run: |
-          git config --local user.email {{ vars.COMMIT_USER_EMAIL }}
-          git config --local user.name {{ vars.COMMIT_USER_NAME }}
+          git config --local user.email ${{ vars.COMMIT_USER_EMAIL }}
+          git config --local user.name ${{ vars.COMMIT_USER_NAME }}
           git add .
           git commit -m 'update new poster' || echo "nothing to commit"
           git push || echo "nothing to push"
