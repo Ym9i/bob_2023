@@ -1,0 +1,4 @@
+python-dotenv==1.0.0
+pytz==2023.3
+PyGithub==1.58.1
+github-poster==2.5.0
