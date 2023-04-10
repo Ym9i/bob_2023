@@ -46,7 +46,6 @@ jobs:
         if: contains(env.TYPE, 'issue')
         run: |
           github_poster issue --issue_number ${{ vars.ISSUE_NUMBER_01 }} --repo_name ${{ vars.REPO_NAME }} --github_token ${{ secrets.GH_TOKEN }} --me ${{ vars.ISSUE_NUMBER_01_ME }}
-          mv issue.svg issue_${{ vars.ISSUE_NUMBER_01 }}.svg
 
       - name: Push new postger
         run: |
